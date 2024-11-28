@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+
+
+}
+
+header {
+
+    background-color: rgb(238, 238, 238);
+    border: 1px;
+    padding: 5px;
+    text-align: center;
+    height: auto;
+
+}
+
+body {
+    background-color: rgb(248, 248, 248);
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 18px;
+
+
+}
+
+section {
+
+
+
+}
+
+main {
+    border: 0px;
+    border-radius: 7px;
+    box-shadow: 0px 6px 6px 6px rgba(46, 45, 45, 0.1);
+    margin: 10px;
+    padding: 15px;
+
+
+}
+
+footer {
+    display: grid;
+    background-color: rgb(238, 238, 238);
+    font-family: "Noto Sans Thai", sans-serif;
+    height: auto;
+    margin-top: 15px;
+    padding: 15px;
+ 
+}
+
+/* คำสั่งต่างๆ */
+
+h1 {
+    background-color: rgb(248, 248, 248);
+    padding: 7px;
+    
+}
+
+
+
+/* ข้อมูลข้างในโครงสร้าง */
+
+.containercon {
+    display: grid;
+    gap: 7px; /* ระยะห่างระหว่างแต่ละองค์ประกอบ */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+    justify-content: center;
+    margin: 10px;
+}
+
+.containerfoot {
+    display: flex;
+    gap: 7px; /* ระยะห่างระหว่างแต่ละองค์ประกอบ */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+
+}
+
+
+.content {
+    border: 0px;
+    border-radius: 7px;
+    box-shadow: 0px 6px 6px 6px rgba(46, 45, 45, 0.1);
+    margin: 10px;
+    padding: 15px;
+    
+    height: auto;
+
+
+}
+
+.icon1{
+    width: 55px;
+    border-radius: 13px;
+    margin: 7px;
+
+}
+
+.item {
+    position: relative;
+    background-color: #333;
+    width: 100%;
+    height: 45px;
+    
+
+}
+
+
+
+/* คำสั่งเมนูบาร์ */
+
+.menu-bar {
+    position: relative;
+    background-color: #333;
+    padding: 10px;
+}
+  
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+  
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    max-height: 0; /* ซ่อนเมนู */
+    transition: max-height 0.5s ease; /* เพิ่มเอฟเฟกต์การเลื่อน */
+}
+  
+.menu li {
+    border-top: 1px solid #575757;
+}
+  
+.menu li:first-child {
+    border-top: none;
+}
+  
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: left;
+}
+  
+.menu a:hover {
+    background-color: #575757;
+}
